@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>WHY THE PEOPLE</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            position: relative;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(images/3.jpg) center/cover no-repeat;
+            background-position: 50% -10%;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(8, 8, 8, 0.3) !important;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(7, 7, 7, 0) !important;
+        }
+
+        .headingtop,
+        .para,
+        .button-container {
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .headingtop {
+            font-weight: 900;
+        }
+
+        .para {
+            font-family: sans-serif;
+            font-weight: 100 !important;
+        }
+
+        .button-container {
+            font-weight: 400;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- bg animation -->
+    <div class="container">
+        <!-- header -->
+        <nav>
+            <a href="/index.html" class="logo">
+                W<span class="middle-letter">T</span>P
+            </a>
+            <label for="toggler">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggler" name="">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/AboutUs.html">About Us</a></li>
+                    <li><a href="/Why-Exist.html">Why Exist</a></li>
+                    <li><a href="/Our-Initiative.html">Our Initiatives</a></li>
+                    <li><a href="/Get-Involved.html">Get Involved</a></li>
+                    <li><a href="/document.html">Our Documents</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/Join-us.html">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="topspc headingtop" style="color: white; margin-top: 130px;">Empowering Entrepreneurs</h1>
+        <h2 style="color: white; font-weight: 900;">Welcome to WE the People</h2>
+        <p class='para'>Advocating for Accountability, Transparency, and Equity in Gary, Indiana.</p>
+        <br>
+        <div class="button-container">
+            <a href="/Join-us.html">
+                <button>Join the Movement</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

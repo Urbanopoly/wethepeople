@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>The Gary Citizens</title>
+    <style>
+        body {
+            position: relative;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(8, 8, 8, 0.9) !important;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(8, 8, 8, 0.6);
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            /* background: rgba(7, 7, 7, 0.5); */
+            background: url(images/additionalimageselectionforwtp/envato-labs-ai-2dec8559-a771-4636-9a93-c594914e1535.jpg) center/cover no-repeat;
+        }
+
+        .headingtop,
+        .para,
+        .button-container {
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .para {
+            font-size: 18px !important;
+            color: rgb(253, 252, 252);
+            font-weight: 600 !important;
+            text-shadow: 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7);
+        }
+
+        .headingtop {
+            font-weight: 900;
+            /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); */
+            text-shadow: 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7);
+        }
+
+
+
+        .button-container {
+            font-weight: 400;
+
+        }
+
+
+        .about-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0px 5px;
+        }
+
+        .about-box {
+            text-align: center;
+            position: relative;
+            width: 390px;
+            background: linear-gradient(to bottom, #e9b232, #520730);
+            margin: 10px;
+            padding: 10px;
+            transition: 0.6s;
+            box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-box1 {
+            text-align: center;
+            position: relative;
+            width: 295px;
+            background: linear-gradient(to bottom, #fcc33e, #520730);
+            margin: 10px;
+            padding: 10px;
+            transition: 0.6s;
+            box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-box:hover {
+            background: linear-gradient(to bottom, #520730, #bd880e);
+            box-shadow: 0px 10px 5px rgba(231, 229, 229, 0.5);
+        }
+
+        .about-box1:hover {
+            background: linear-gradient(to bottom, #520730, #bd880e);
+            box-shadow: 0px 10px 5px rgba(231, 229, 229, 0.5);
+        }
+
+        .box-heading {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            margin: 15px 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .box-content {
+            font-size: 1rem;
+            font-family: 'Abel', sans-serif;
+            color: white;
+            margin: 0 10px;
+            text-align: left;
+        }
+
+        .alignleft {
+            line-height: 25px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .aboutheading {
+                font-size: 1.7rem;
+            }
+
+            .box-heading {
+                font-size: 1rem;
+            }
+
+            .box-content {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <nav>
+            <a href="/index.html" class="logo">
+                W<span class="middle-letter">T</span>P
+            </a>
+            <label for="toggler">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggler" name="">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/AboutUs.html">About Us</a></li>
+                    <li><a href="/Why-Exist.html">Why Exist</a></li>
+                    <li><a href="/Our-Initiative.html">Our Initiatives</a></li>
+                    <li><a href="/Get-Involved.html">Get Involved</a></li>
+                    <li><a href="/document.html">Our Documents</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/Join-us.html">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="headingtop " style="margin-top: 60px; ">The Gary Citizens’ Bill of Rights</h1>
+        <h3 style="color: white;text-shadow: 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7);">Preamble</h3>
+        <p class="para">We, the citizens of Gary, Indiana, in recognition of the inherent dignity and worth of every
+            individual and the shared responsibility for the prosperity of our community, do hereby establish this Bill
+            of Rights. This document affirms our commitment to equity, accountability, and opportunity for all, ensuring
+            that the governance and development of our city serve the common good.</p>
+        <h1 class="headingtop " style="margin-top: 60px;">Article I: The Right to Transparent Governance</h1>
+        <div class="about-container">
+            <div class="about-box">
+                <h3 class="box-heading"> Access to Information </h3>
+                <div class="box-content alignleft">
+                    Every citizen has the right to full and timely access to information regarding city decisions,
+                    finances, and development projects. <br>
+                </div>
+            </div>
+            <div class="about-box">
+
+                <h3 class="box-heading">Open Meetings</h3>
+                <div class="box-content alignleft">
+                    All meetings of public bodies and committees shall be open to the public, with agendas and minutes
+                    made readily available.
+                </div>
+            </div>
+            <div class="about-box">
+
+                <h3 class="box-heading">Public Reporting</h3>
+                <div class="box-content alignleft">
+                    Regular updates on the city’s progress, expenditures, and initiatives shall be provided in a clear
+                    and accessible manner.<br>
+
+                </div>
+            </div>
+        </div>
+        <h1 class="headingtop" style="margin-top: 60px;">Article II: The Right to Community Involvement</h1>
+<div class="about-container">
+    <div class="about-box">
+        <h3 class="box-heading">Participatory Planning</h3>
+        <div class="box-content alignleft">
+            Citizens have the right to actively participate in the planning and development of their neighborhoods.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Community Input</h3>
+        <div class="box-content alignleft">
+            Public forums shall be held regularly to gather input on major decisions, ensuring that all voices are heard.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Advisory Committees</h3>
+        <div class="box-content alignleft">
+            Residents shall have representation on advisory committees related to housing, economic development, and city services.
+        </div>
+    </div>
+</div>
+
+<h1 class="headingtop" style="margin-top: 60px;">Article III: The Right to Economic Opportunity</h1>
+<div class="about-container">
+    <div class="about-box">
+        <h3 class="box-heading">Local Priority</h3>
+        <div class="box-content alignleft">
+            Local residents and businesses shall receive priority in hiring and contracting for city-funded projects.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Workforce Development</h3>
+        <div class="box-content alignleft">
+            Every citizen has the right to access training programs and resources that enhance employability and entrepreneurship.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Equitable Development</h3>
+        <div class="box-content alignleft">
+            Economic development initiatives must ensure benefits are distributed equitably across all communities in Gary.
+        </div>
+    </div>
+</div>
+
+<h1 class="headingtop" style="margin-top: 60px;">Article IV: The Right to Safe and Livable Neighborhoods</h1>
+<div class="about-container">
+    <div class="about-box">
+        <h3 class="box-heading">Blight Reduction</h3>
+        <div class="box-content alignleft">
+            Citizens have the right to live in neighborhoods free from abandoned and hazardous properties.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Infrastructure Maintenance</h3>
+        <div class="box-content alignleft">
+            Public infrastructure, including roads, utilities, and public spaces, shall be maintained to ensure safety and quality of life.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Environmental Stewardship</h3>
+        <div class="box-content alignleft">
+            Residents have the right to a clean and healthy environment, with measures taken to address pollution and promote sustainability.
+        </div>
+    </div>
+</div>
+
+<h1 class="headingtop" style="margin-top: 60px;">Article V: The Right to Fair Representation</h1>
+<div class="about-container">
+    <div class="about-box">
+        <h3 class="box-heading">Equal Voice</h3>
+        <div class="box-content alignleft">
+            All citizens shall have an equal voice in local elections and governance, free from discrimination or disenfranchisement.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Accountability of Officials</h3>
+        <div class="box-content alignleft">
+            Elected officials and city employees are accountable to the citizens and must act in the community’s best interest.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Ethical Conduct</h3>
+        <div class="box-content alignleft">
+            All city officials shall adhere to a strict code of ethics, ensuring decisions are made transparently and free from corruption.
+        </div>
+    </div>
+</div>
+
+<h1 class="headingtop" style="margin-top: 60px;">Article VI: The Right to Justice and Equity</h1>
+<div class="about-container">
+    <div class="about-box">
+        <h3 class="box-heading">Non-Discrimination</h3>
+        <div class="box-content alignleft">
+            Every citizen has the right to equal treatment under the law, regardless of race, gender, socioeconomic status, or background.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Accessible Services</h3>
+        <div class="box-content alignleft">
+            All city services and programs shall be accessible and inclusive, addressing the needs of marginalized and underserved communities.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Conflict Resolution</h3>
+        <div class="box-content alignleft">
+            The city shall provide mechanisms for resolving disputes and grievances fairly and efficiently.
+        </div>
+    </div>
+</div>
+
+<h1 class="headingtop" style="margin-top: 60px;">Article VII: The Right to Accountability and Advocacy</h1>
+<div class="about-container">
+    <div class="about-box">
+        <h3 class="box-heading">Citizen Advocacy</h3>
+        <div class="box-content alignleft">
+            The Citizens Advocacy Committee, “We the People,” shall serve as an independent body to oversee the adherence to this Bill of Rights.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Right to Petition</h3>
+        <div class="box-content alignleft">
+            Citizens have the right to petition city officials for redress of grievances or propose new initiatives.
+        </div>
+    </div>
+    <div class="about-box">
+        <h3 class="box-heading">Progress Audits</h3>
+        <div class="box-content alignleft">
+            Regular audits shall be conducted to ensure city initiatives align with the principles outlined in this document.
+        </div>
+    </div>
+    
+</div>
+
+<h1 class="headingtop " style="margin-top: 60px; ">Ratification and Amendment</h1>
+        <h3 style="color: white;text-shadow: 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7), 2px 2px 10px rgba(7, 7, 7, 0.7);">Preamble</h3>
+        <p class="para" style="padding-bottom: 30px;">his Bill of Rights shall serve as a guiding document for the governance of Gary, Indiana, affirming the inalienable rights of its citizens. Amendments to this Bill of Rights may be proposed and enacted with the approval of the Citizens Advocacy Committee and a majority vote by the City Council.</p>
+
+    </div>
+</body>
+
+</html>

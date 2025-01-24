@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Get Involved</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container1 {
+    text-align: center;
+    padding: 20px 10% 0px 10%;
+    position: relative;
+    background: url(images/6.jpg) center/cover no-repeat;
+    color: white;
+    overflow: hidden;
+}
+
+/* Add a dark overlay */
+.container1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1;
+}
+
+/* Ensure content is above the overlay */
+.container1 * {
+    position: relative;
+    z-index: 2;
+}
+
+
+        /* Main Heading */
+        .main-heading {
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            text-shadow: 0 0 5px white, 0 0 10px rgb(12, 12, 12);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #d8d8d8;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+        }
+        /* Two columns layout */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .right-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .box {
+            background: linear-gradient(to bottom, #b35f0c, #720147);
+            padding: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(253, 252, 252, 0.2), 0 5px 15px rgba(252, 251, 251, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .box h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fcf7f7;
+            text-shadow: 0 0 3px rgba(248, 247, 247, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 1rem;
+            color: #d8d8d8;
+            list-style: none;
+        }
+
+        .box .alignlft {
+            text-align: left;
+            padding: 0px 10px !important;
+            line-height: 20px;
+
+        }
+
+        .box .righttext {
+            padding: 0px 35px !important;
+            line-height: 22px;
+        }
+
+        .box:hover {
+            box-shadow: 0 6px 12px rgba(119, 3, 100, 0.2);
+        }
+
+        .cta-button {
+            width: 80%;
+            padding: 10px 20%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: linear-gradient(to bottom, #b35f0c, #720147);
+            color: rgb(252, 249, 249);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+            text-shadow: 2px 4px 5px rgb(0, 0, 0);
+        }
+
+        .cta-button:hover {
+            cursor: pointer;
+            color: #720147;
+            font-weight: 800;
+            background: linear-gradient(to bottom, #d3761a, #720147);
+            opacity: 1;
+            text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 900px) {
+            .box .righttext {
+                padding: 0px 30px !important;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .box .righttext {
+                padding: 0px 15px !important;
+
+            }
+
+            .box .alignlft {
+                text-align: left;
+                padding: 0px 10px !important;
+                line-height: 18px;
+                font-size: 15px;
+
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .content-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+
+            .main-heading {
+                font-size: 1.5rem;
+            }
+
+            .cta-button {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header  -->
+        <nav>
+            <a href="/index.html" class="logo">
+                W<span class="middle-letter">T</span>P
+            </a>
+            <label for="toggler">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggler" name="">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/AboutUs.html">About Us</a></li>
+                    <li><a href="/Why-Exist.html">Why Exist</a></li>
+                    <li><a href="/Our-Initiative.html">Our Initiatives</a></li>
+                    <li><a href="/Get-Involved.html">Get Involved</a></li>
+                    <li><a href="/document.html">Our Documents</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/Join-us.html">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- header  -->
+        <div class="container1">
+            <!-- Add tagline here -->
+            <div class="main-heading">Get Involved</div>
+            <p class="tagline">We the People Believes in the power of collective action. Join us in shaping the future of Gary by getting involved in the following ways:</p>
+            <div class="content-wrapper">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="box ">
+
+                        <h3>Become a Member</h3>
+                        <p class="alignlft"> Sign up to become an active member of WTP and contribute to our advocacy efforts.</p>
+                        <div style="width: 100%;height: 45px; overflow: hidden; border-radius: 5px; margin-bottom: 15px;">
+                           
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Attend Public Forums</h3>
+                        <p> Participate in our regular forums to share your ideas and concerns.</p>
+                        <div style="width: 100%;height: 45px; overflow: hidden; border-radius: 5px; margin-bottom: 15px;">
+                           
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h3>Volunteer</h3>
+                        <p> Help us with community outreach, research, and monitoring projects.</p>
+                        <div style="width: 100%;  height: 45px; overflow: hidden; border-radius: 5px; margin-bottom: 15px;">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <div class="box">
+                        <h3>Donate</h3>
+                        <p class="alignlft righttext"> Support our mission by making a financial contribution to sustain our advocacy work.
+                        </p>
+                        <div style="width: 100%; height: 135px; overflow: hidden; border-radius: 5px; margin-bottom: 15px; background-position: 50% 0%;">
+                            <img src="images/wethepeople/envato-labs-ai-8a04a539-4898-47d7-8224-5c644f11615f.jpg" loading="lazy" alt="Impact goal" style="width: 100%; height: 100%; object-fit: cover; ">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="box">
+                        <h3>Stay Informed</h3>
+                        <p class="alignlft righttext">  Subscribe to our newsletter for updates on our initiatives, upcoming events, and city developments.
+                        </p>
+                        <div style="width: 100%; height: 135px; overflow: hidden; border-radius: 5px; margin-bottom: 15px;">
+                            <img src="images/additionalimageselectionforwtp/envato-labs-ai-57173bb6-b42c-411b-a01e-9ed5647a3c58.jpg" loading="lazy" alt="Impact goal" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br> <br>
+
+        </div>
+    </div>
+</body>
+
+</html>

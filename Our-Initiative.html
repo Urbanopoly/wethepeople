@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Our-initiative</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        
+
+        .container1 {
+            text-align: center;
+            padding: 20px 10% 0px 10%;
+            background: url(images/4.jpg) center/cover no-repeat;
+        }
+
+        /* Main Heading */
+        .main-heading {
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            /* background: linear-gradient( rgba(1, 78, 1,0.5),#0a0a0a); */
+            text-shadow: 0 0 5px rgb(8, 6, 6), 0 0 10px rgb(12, 12, 12), 0 0 5px rgb(8, 6, 6), 0 0 10px rgb(12, 12, 12), 0 0 5px rgb(8, 6, 6), 0 0 10px rgb(12, 12, 12);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: #d8d8d8;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+        }
+
+        /* Two columns layout */
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        .left-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+        .right-column {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .box {
+            background: linear-gradient(to bottom, #b35f0c, #720147);
+            padding: 20px 10px;
+            border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(253, 252, 252, 0.2), 0 5px 15px rgba(252, 251, 251, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .box h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fcf7f7;
+            text-shadow: 0 0 5px rgb(8, 6, 6), 0 0 10px rgb(12, 12, 12), 0 0 5px rgb(8, 6, 6), 0 0 10px rgb(12, 12, 12), 0 0 5px rgb(8, 6, 6), 0 0 10px rgb(12, 12, 12);
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 1rem;
+            color: #d8d8d8;
+            list-style: none;
+            text-shadow: 0 0 3px rgba(5, 5, 5, 0.6), 0 0 3px rgba(5, 5, 5, 0.6);
+        }
+
+        .box .alignlft {
+            text-align: left;
+            padding: 0px 10px !important;
+            line-height: 20px;
+
+        }
+
+        .box .righttext {
+            padding: 0px 35px !important;
+            line-height: 22px;
+        }
+
+        .box:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button {
+            width: 80%;
+            padding: 10px 20%;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: linear-gradient(#808080, rgb(1, 78, 1));
+            color: rgb(252, 249, 249);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+            text-shadow: 2px 4px 5px rgb(0, 0, 0);
+        }
+
+        .cta-button:hover {
+            cursor: pointer;
+            color: rgb(1, 78, 1);
+            font-weight: 800;
+            background: linear-gradient(rgb(1, 78, 1), #808080);
+            opacity: 1;
+            text-shadow: 0 0 8px #fff, 0 0 10px #fff;
+        }
+
+        /* Mobile View */
+        @media screen and (max-width: 900px) {
+            .box .righttext {
+                padding: 0px 30px !important;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .box .righttext {
+                padding: 0px 15px !important;
+
+            }
+
+            .box .alignlft {
+                text-align: left;
+                padding: 0px 10px !important;
+                line-height: 18px;
+                font-size: 15px;
+
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .content-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+
+            .main-heading {
+                font-size: 1.5rem;
+            }
+
+            .cta-button {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header  -->
+        <nav>
+            <a href="/index.html" class="logo">
+                W<span class="middle-letter">T</span>P
+            </a>
+            <label for="toggler">
+                <i class="fa fa-bars"></i>
+            </label>
+            <input type="checkbox" id="toggler" name="">
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="/AboutUs.html">About Us</a></li>
+                    <li><a href="/Why-Exist.html">Why Exist</a></li>
+                    <li><a href="/Our-Initiative.html">Our Initiatives</a></li>
+                    <li><a href="/Get-Involved.html">Get Involved</a></li>
+                    <li><a href="/document.html">Our Documents</a></li>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/Join-us.html">Join Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- header  -->
+        <div class="container1">
+            <!-- Add tagline here -->
+            <div class="main-heading" style="margin-top: 60px; margin-bottom: 40px;">Our Initiatives</div>
+            <div class="content-wrapper">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="box ">
+
+                        <h3>Community Watching Program</h3>
+                        <p class="alignlft">Monitoring public spending and policy implementation to ensure transparency.
+                        </p>
+                       
+                    </div>
+                    <div class="box">
+                        <h3>Public Education Campaigns</h3>
+                        <p>Hosting workshops and seminars to educate residents about their rights and how to engage with
+                            local government.</p>
+                       
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column" style="margin-bottom: 40px;">
+                    <div class="box">
+                        <h3>Neighborhood Advocacy Circles</h3>
+                        <p class="alignlft righttext">Building networks of local advocates to represent
+                            neighborhood-specific concerns.
+                        </p>
+                        
+                    </div>
+                    <br>
+                    <div class="box">
+                        <h3>Annual Report on Governance</h3>
+                        <p class="alignlft righttext">Publishing a detailed assessment of city government performance
+                            and community impact.
+                        </p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
