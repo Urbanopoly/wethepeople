@@ -334,7 +334,10 @@
     <div class="container1">
         <nav>
             <a href="/index.html" class="logo">
-                W<span class="middle-letter">T</span>P
+                <img src="images/city_logo.png" alt="City Logo" style="height: 60px; width: auto;">
+            </a>
+            <a href="/index.html" class="logo">
+                <img src="images/vector-american-flags.png" alt="City Logo" style="height: 60px; width: auto;">
             </a>
             <label for="toggler">
                 <i class="fa fa-bars"></i>
@@ -356,7 +359,7 @@
 
         <div id="container">
             <h1 class="build" style="margin-top: 100px; ">Let's Transform Our Community Together.</h1>
-           
+
             <h1 style="text-shadow: 0 0 5px rgb(105, 172, 105), 0 0 10px rgb(105, 105, 105);">&bull; Keep in Touch
                 &bull;</h1>
             <div class="underline">
@@ -382,7 +385,7 @@
 
             <div class="container3" style="display: flex; align-items: center; gap: 2px; margin: 0px; padding: 0px;">
                 <!-- Left Side: Image -->
-                
+
                 <!-- Right Side: Form -->
                 <div style="flex: 3;">
                     <form action="#" method="post" id="contact_form" onsubmit="sendEmail(); return false;">
@@ -402,7 +405,9 @@
                         </div>
 
                         <div class="submit" style="padding-bottom: 30px;">
-                            <input type="submit" value="Send Message" id="form_button" />
+                            <button id="form_button" style="letter-spacing: 2px;" onclick="redirectToPetition()">
+                                PETITION
+                            </button>
                         </div>
                     </form>
 
@@ -410,56 +415,12 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "R0ldvW2BzPn2oGwz2",
-            });
-        })();
-    </script>
-    </script>
     <script>
-        function sendEmail() {
-            let params = {
-                name: document.getElementById('name_input').value,
-                email: document.getElementById('email_input').value,
-                telephone: document.getElementById('telephone_input').value,
-                message: document.getElementById('message_input').value,
-            }
-
-            emailjs.send("service_jzh1chq", "template_rao2fzw", params)
-                .then(() => {
-                    swal({
-                        title: "Message Received!",
-                        text: "We'll get back to you shortly.",
-                        icon: "success",
-                        button: {
-                            text: "Okay",
-                            className: "custom-button", // Add a custom class for styling
-                        },
-                    });
-                })
-                .catch((error) => {
-                    console.error("EmailJS error:", error); // Debugging line
-                    swal({
-                        title: "Oops!",
-                        text: "Something went wrong. Please try again.",
-                        icon: "error",
-                        button: {
-                            text: "Retry",
-                            className: "custom-button",
-                        },
-                    });
-                });
-
+        function redirectToPetition() {
+            const petitionURL = 'https://www.change.org/p/mandate-gary-s-city-officials-to-auction-over-8-000-city-owned-parcels';
+            window.location.href = petitionURL; // Opens the link in the same tab
         }
     </script>
-
 </body>
 
 </html>
