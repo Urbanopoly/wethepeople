@@ -9,12 +9,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8a3061;
+  background-color: blue;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #8a3061;
+  background-color: blue;
 }
 
 body {
@@ -36,19 +36,13 @@ body {
   background: #000;
 }
 
-.middle-letter {
-  position: relative;
-  top: -8px;
-  color: #b40872;
-  animation: blinkT 1.5s ease-in-out infinite;
-}
 /* audio icon  */
 
 .sticky-audio-icon {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #d39c07;
+  background-color: blue;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   width: 50px;
@@ -62,7 +56,7 @@ body {
 
 .sticky-audio-icon i {
   font-size: 24px;
-  color: #6b035a;
+  color: #fcfbfc;
 }
 /* audio icon  */
 
@@ -90,16 +84,16 @@ nav {
   font-weight: bold;
   font-family: sans-serif;
   padding: 10px 50px;
-  background: linear-gradient(to bottom, #f8b824, #8d0751);
+  background: linear-gradient(to bottom, red, blue);
 }
 nav a {
   text-decoration: none;
   color:#fbfbfd;
-  text-shadow: 0 0 1px rgb(3, 3, 3), 0 0 1px rgb(8, 8, 8), 1px 1px 1px rgb(7, 7, 7);
+  text-shadow: 0 0 1px rgb(182, 3, 3), 0 0 1px rgb(177, 4, 4), 1px 1px 1px rgb(248, 4, 4);
 }
 nav a:hover {
   color: white;
-  text-shadow: 0 0 5px white, 0 0 10px white, 2px 2px 2px black;
+  text-shadow: 0 0 5px white, 0 0 10px rgb(7, 7, 7), 2px 2px 2px rgb(36, 33, 206);
 }
 
 .list {
@@ -119,7 +113,7 @@ nav a:hover {
   padding-bottom: 30px !important;
 }
 button {
-  border: 4px solid #f8b824;
+  border: 4px solid red;
   background: transparent;
   font-family: "Roboto", sans-serif;
   color: #fcfbfb;
@@ -133,8 +127,8 @@ button {
 }
 
 button:hover {
-  border: 4px solid #2b0018;
-  background-color: rgba(78, 1, 59, 0.5);
+  border: 4px solid #0a027e;
+  background-color: rgba(1, 2, 78, 0.5);
   cursor: pointer;
   color: white;
   font-weight: 800;
@@ -152,13 +146,13 @@ button:focus {
 .headingtop {
   text-align: center;
   color: white;
-  text-shadow: 0 0 5px rgb(80, 1, 63), 0 0 10px rgb(255, 255, 255, 1),
-  0 0 20px rgb(143, 3, 113);
+  text-shadow: 0 0 5px rgb(13, 1, 80), 0 0 10px rgb(255, 255, 255, 1),
+  0 0 20px rgb(40, 3, 143);
 }
 
 .headingtop:hover {
-  text-shadow: 0 0 5px rgb(150, 1, 142), 0 0 10px rgb(255, 255, 255, 1),
-    0 0 20px rgb(255, 255, 255, 1), 0 0 30px rgb(117, 6, 80);
+  text-shadow: 0 0 5px rgb(41, 1, 150), 0 0 10px rgb(255, 255, 255, 1),
+    0 0 20px rgb(255, 255, 255, 1), 0 0 30px rgb(26, 6, 117);
     
 }
 .para {
@@ -173,7 +167,7 @@ label {
   display: none;
 }
 label i {
-  color: rgb(10, 10, 10);
+  color: rgb(119, 3, 3);
 }
 #footer {
   font-family: "Roboto", sans-serif;
