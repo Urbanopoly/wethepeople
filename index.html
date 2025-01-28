@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Why The People</title>
+    <title>We The People</title>
     <style>
+        @font-face {
+            font-family: 'Merchons';
+            src: url('font/Merchons.ttf') format('truetype'); /* Ensure the correct path */
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            margin: 0;
+            margin: 0px 0px 0px 0px;
             padding: 0;
             box-sizing: border-box;
             display: flex;
@@ -16,39 +23,33 @@
             height: 100vh;
             background-color: #ffffff;
             font-family: Arial, sans-serif;
-        }
-
-        .splash-container {
             text-align: center;
         }
 
-        .para {
-            font-size: 2.5rem;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-        }
+       
 
         .logo {
-            max-width: 250px;
+            max-width: 500px;
             width: 100%;
             height: auto;
         }
 
         .enter-link {
+            font-family:sans-serif;
+            letter-spacing: 2px;
             display: inline-block;
             padding: 10px 20px;
-            background-color: red;
+            background-color: #000000;
             color: #ffffff;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 900;
-            letter-spacing: 1px;
+            font-size: 20px;
+            font-weight: 600;
             border-radius: 4px;
             transition: background-color 0.3s ease;
         }
 
         .enter-link:hover {
-            background-color: blue;
+            background-color: #047700;
         }
 
         @media (max-width: 768px) {
@@ -66,11 +67,9 @@
 
 <body>
     <div class="splash-container">
-        <div class="para" style="color: rgb(230, 3, 3);">Remembering Our Past</div>
-        <div class="para" style="color: rgb(1, 168, 1); margin-bottom: 10px;">We Create Our Future</div>
-        <img src="images/city logo.jpg" alt=" Logo" class="logo">
-        <h1 class="para" style="color: blue;" >Why The People</h1>
-        <a href="main.html" class="enter-link">VISIT</a>
+        <img src="images/new/We the people.jpg" style="margin-bottom: 20px; width: 260px; height: auto;" alt="1921 Logo" > <br>
+        <img src="images/city logo.jpg" alt=" Logo" class="logo"> <br>
+        <a href="main.html" style="margin-top: 10px; " class="enter-link">VISIT</a>
     </div>
 </body>
 
